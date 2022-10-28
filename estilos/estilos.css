@@ -1,0 +1,343 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  color: black;
+  text-decoration: none; }
+  a:hover {
+    color: black; }
+
+nav {
+  background-image: radial-gradient(circle 410px at 49.5% 99%, #fad0c4 0%, #ffd1ff 99.5%); }
+
+.form-buscar {
+  height: 50px;
+  border: 3px solid #b39f8d; }
+  .form-buscar .form-div {
+    display: flex;
+    align-items: center; }
+
+.header__logo {
+  display: flex;
+  justify-content: center; }
+  .header__logo .logo__foto {
+    max-width: 200px;
+    margin: 30px; }
+
+.header__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 420px) {
+    .header__list {
+      flex-direction: column; } }
+  .header__list .header__item {
+    font-size: 18px;
+    border: 2px solid #b39f8d;
+    padding: 10px;
+    margin-bottom: 50px; }
+    .header__list .header__item:hover {
+      background-color: #ce8abc;
+      border: 2px solid #de88bb; }
+    .header__list .header__item:active {
+      background-color: palevioletred; }
+    @media screen and (max-width: 420px) {
+      .header__list .header__item {
+        font-size: 10px;
+        padding: 5px;
+        margin: 7px; } }
+    @media screen and (max-width: 900px) {
+      .header__list .header__item {
+        font-size: 12px;
+        border: .5px solid palevioletred;
+        padding: 5px;
+        margin: 7px; } }
+
+.section__index {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  background-image: url(../img/bienvenidas.jpg);
+  height: 80vh;
+  background-position: center;
+  font-size: 1 rem;
+  align-items: center;
+  flex-wrap: wrap;
+  background-size: cover; }
+  .section__index .section__p {
+    font-size: 4rem; }
+    @media screen and (max-width: 900px) {
+      .section__index .section__p {
+        font-size: 30px;
+        padding: 30px;
+        text-align: center; } }
+  .section__index .btn {
+    font-size: 20px;
+    margin: 15px;
+    padding: 10px;
+    background-color: #efa8dc;
+    border: 2px solid #b39f8d; }
+    .section__index .btn:hover {
+      background-color: #905080; }
+
+.main__subtitulo {
+  text-align: center;
+  margin: 50px;
+  font-size: 3rem;
+  font-family: Roboto Condensed; }
+  @media screen and (max-width: 900px) {
+    .main__subtitulo {
+      font-size: 30px;
+      color: palevioletred; } }
+
+.main__vinosdestacados {
+  display: flex;
+  justify-content: center;
+  margin: 80px; }
+  @media screen and (max-width: 420px) {
+    .main__vinosdestacados {
+      flex-direction: column; } }
+
+.btn-comprar {
+  background-color: #efa8dc;
+  border: 1px solid;
+  padding: 7px;
+  text-decoration: none;
+  border-radius: 5%;
+  border: 2px solid #b39f8d; }
+  .btn-comprar:hover {
+    background-color: #905080;
+    color: black; }
+
+.vinoteca {
+  background-image: url(../img/estrellas.jpg);
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 1 rem;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 30px;
+  align-items: center; }
+  .vinoteca .vinoteca-p {
+    color: white;
+    padding: 5%;
+    font-size: 20px; }
+    @media screen and (max-width: 420px) {
+      .vinoteca .vinoteca-p {
+        font-size: 15px; } }
+
+.servicios {
+  text-align: center; }
+
+.carousel {
+  margin: 30px; }
+
+.nosotros__p {
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 50px 50px;
+  padding: 70px;
+  background-image: radial-gradient(circle 410px at 49.5% 99%, #fad0c4 0%, #ffd1ff 99.5%);
+  border: 2px solid #fad0c4; }
+  @media screen and (max-width: 900px) {
+    .nosotros__p {
+      font-size: 15px;
+      padding: 20px; } }
+  @media screen and (max-width: 420px) {
+    .nosotros__p {
+      font-size: 10px;
+      padding: 15px; } }
+
+.card-group {
+  margin: 20px; }
+  .card-group .card {
+    margin: 20px; }
+
+.vinos__titulo {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 50px 50px;
+  padding: 20px;
+  border: 3px solid #b39f8d; }
+
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 10px;
+  grid-auto-columns: 100px;
+  margin-bottom: 50px; }
+
+.promo {
+  margin-bottom: 30px; }
+
+.espumantes__titulo {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 50px 50px;
+  padding: 20px;
+  border: 3px solid #b39f8d; }
+
+.map {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.info-contacto {
+  margin: 80px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.contacto__msj {
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 50px 50px;
+  padding: 20px;
+  background-image: radial-gradient(circle 410px at 49.5% 99%, #fad0c4 0%, #ffd1ff 99.5%);
+  border: 3px solid #b39f8d; }
+
+.flex__container {
+  display: flex;
+  align-items: center;
+  flex-direction: wrap;
+  justify-content: center;
+  background-image: radial-gradient(circle 410px at 49.5% 99%, #fad0c4 0%, #ffd1ff 99.5%);
+  margin: 50px 50px;
+  padding: 20px;
+  border: 3px solid #b39f8d;
+  flex-wrap: wrap; }
+  @media screen and (max-width: 420px) {
+    .flex__container {
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 20px;
+      margin-top: 15px; } }
+  .flex__container .form {
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px; }
+    .flex__container .form [type="submit"]:hover {
+      background-color: #ce8abc; }
+  .flex__container .form__input {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid #b39f8d; }
+  .flex__container .img-container {
+    padding: 20px;
+    margin: auto; }
+
+.form textarea {
+  min-height: 140px;
+  resize: none; }
+
+.compras-h2 {
+  text-align: center;
+  margin: 50px;
+  font-size: 3rem; }
+
+.section__compras {
+  display: flex;
+  justify-content: center;
+  margin: 20px; }
+  .section__compras .compras-foto {
+    width: 100%;
+    margin: 80px; }
+
+.compras-titulo {
+  text-align: center;
+  font-size: 2rem; }
+
+.compras-agregar {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px; }
+  .compras-agregar .btn-vc {
+    background-color: #b39f8d;
+    padding: 15px;
+    margin: 15px;
+    text-decoration: none;
+    border-radius: 5%; }
+    @media screen and (max-width: 420px) {
+      .compras-agregar .btn-vc {
+        padding: 7px;
+        font-size: 10px;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 2px; } }
+    .compras-agregar .btn-vc:hover {
+      background-color: #ce8abc; }
+
+.section-comprar {
+  margin: 80px; }
+
+footer {
+  /* background-color: #efa8dc;*/
+  background-image: radial-gradient(circle 410px at 49.5% 99%, #fad0c4 0%, #ffd1ff 99.5%); }
+
+.contenedor__footer {
+  display: flex;
+  justify-content: center; }
+  .contenedor__footer .titulo-footer {
+    margin: 30px;
+    font-size: 40px; }
+
+.div-contacto {
+  display: flex;
+  justify-content: center; }
+  .div-contacto .footer-contacto {
+    font-size: 17px;
+    padding: 7px; }
+    .div-contacto .footer-contacto:hover {
+      background-color: #ce8abc;
+      color: #905080;
+      border: 2px solid #ce8abc; }
+
+.redes-sociales {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px; }
+  @media screen and (max-width: 420px) {
+    .redes-sociales {
+      flex-direction: column; } }
+  .redes-sociales .redes-item {
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid black; }
+    .redes-sociales .redes-item:hover {
+      background-color: #ce8abc;
+      color: #905080;
+      border: 2px solid #ce8abc;
+      display: flex;
+      flex-wrap: wrap; }
+    .redes-sociales .redes-item:active {
+      background-color: palevioletred; }
+    @media screen and (max-width: 900px) {
+      .redes-sociales .redes-item {
+        font-size: 10px;
+        padding: 5px; } }
+    @media screen and (max-width: 420px) {
+      .redes-sociales .redes-item {
+        font-size: 15px;
+        padding: 10px;
+        color: #905080;
+        border: 1px solid #b39f8d; } }
+
+.copyright {
+  display: flex;
+  justify-content: center; }
+  .copyright .p-copyright {
+    margin: 20px; }

@@ -1,0 +1,590 @@
+
+
+$res_mobile: 420px;
+$res_tablet: 900px;
+$gradiente: radial-gradient( circle 410px at 49.5% 99%,  rgba(250,208,196,1) 0%, rgba(255,209,255,1) 99.5% );
+$colorhover: #ce8abc;
+
+
+
+@mixin fondoboton {
+    background-color: #ce8abc;
+    border: 2px solid rgb(222, 136, 187);
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+        
+            &:hover{
+                color: black;
+                }
+}
+
+
+
+nav {
+    background-image: $gradiente
+    
+}
+
+
+
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+
+            .logo__foto {
+                max-width: 200px;
+                margin: 30px;
+    
+    }
+}
+
+
+.header__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+        @media screen and (max-width: $res_mobile){
+            flex-direction:column;
+    
+    }
+
+            .header__item {
+                font-size: 18px;
+                border: 2px solid #b39f8d;
+                padding: 10px;
+                margin-bottom: 50px;
+                
+
+                &:hover {
+                    /*background-color: #ce8abc;
+                    border: 2px solid rgb(222, 136, 187);*/
+                    @include fondoboton;
+                  
+                }
+
+                &:active {
+                        background-color:palevioletred;
+                }
+
+
+                @media screen and (max-width: $res_mobile){
+                    font-size: 10px; 
+                    padding: 5px;
+                    margin: 7px;
+            
+                }
+
+                @media screen and (max-width:$res_tablet){
+        
+                    font-size: 12px; 
+                    border: .5px solid palevioletred ;
+                    padding: 5px;
+                    margin: 7px;
+                
+                     }   
+    }
+}
+
+
+
+.section__index {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-image: url(../img/bienvenidas.jpg);
+    height: 80vh;
+    background-position: center;
+    font-size: 1 rem;
+    align-items: center;
+    flex-wrap: wrap;
+    background-size: cover;
+   
+
+
+                .section__p {
+                        font-size: 4rem;
+
+                        @media screen and (max-width: 900px){
+                            font-size: 30px;  
+                            padding: 30px;
+                            text-align: center;
+                        }
+
+                            }
+
+
+                .btn {
+                    font-size: 20px;
+                    margin: 15px;
+                    padding: 10px;
+                    background-color: #efa8dc;;
+                    border: 2px solid #b39f8d;
+
+                    &:hover {
+                        background-color: #905080;
+                    
+                             }
+                        }
+}
+
+
+.main__subtitulo {
+    text-align: center;
+    margin: 50px;
+    font-size: 3rem;
+    font-family:Roboto Condensed;
+
+            @media screen and (max-width: $res_tablet){
+                font-size: 30px; 
+                color: palevioletred;
+                }
+}
+
+
+.main__vinosdestacados {
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+
+            @media screen and (max-width: $res_mobile){
+                flex-direction: column; 
+       
+             }
+}
+
+
+.btn-comprar {
+    background-color: #efa8dc;
+    border: 1px solid;
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 5%;
+    border: 2px solid #b39f8d;
+
+        &:hover {
+            background-color: #905080;
+            color: black;
+            }   
+
+}
+
+
+
+.vinoteca{
+    background-image: url(../img/estrellas.jpg);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 1 rem;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 30px;
+    align-items: center;
+
+    .vinoteca-p{
+        color: white;
+        padding: 5%;
+        font-size: 20px;
+
+        @media screen and (max-width: $res_mobile){
+            font-size: 15px;
+             }
+
+         }
+}
+
+.servicios{
+    text-align: center;
+}
+
+
+.carousel {
+    margin: 30px;
+    
+}
+
+
+.nosotros__p {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 50px 50px;
+    padding: 70px;
+    background-image: $gradiente;
+    border: 2px solid  rgba(250,208,196,1);
+    
+    
+
+
+            @media screen and (max-width:$res_tablet){
+                font-size: 15px; 
+                padding: 20px;
+                    
+            }
+
+
+            @media screen and (max-width: $res_mobile){
+                font-size: 10px; 
+                 padding: 15px;  
+                    
+            }                
+}
+
+
+.card-group{
+    margin: 20px;
+
+    .card{
+        margin: 20px;
+    }
+}
+
+
+
+.vinos__titulo {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 50px 50px;
+    padding: 20px;
+    border: 3px solid #b39f8d;
+
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    grid-auto-columns: 100px;
+    margin-bottom: 50px;
+}
+
+.promo{
+    margin-bottom: 30px;
+}
+
+
+
+.espumantes__titulo {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 50px 50px;
+    padding: 20px;
+    border: 3px solid #b39f8d;
+
+}
+
+
+.map {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+ }
+
+ .info-contacto{
+    margin: 80px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contacto__msj {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 50px 50px;
+    padding: 20px;
+    background-image: $gradiente;
+    border: 3px solid #b39f8d;
+}
+
+
+.flex__container {
+    display: flex;
+    align-items: center;
+    flex-direction: wrap;
+    justify-content: center;
+    background-image: $gradiente;
+    margin: 50px 50px;
+    padding: 20px;
+    border: 3px solid #b39f8d;
+    flex-wrap: wrap;
+
+         @media screen and (max-width: $res_mobile){
+            width: 100%;
+            margin-left:0px ;
+            margin-right: 0px;
+            margin-bottom: 20px;
+            margin-top: 15px; 
+            }
+
+        .form {
+            min-width: 400px;
+            flex: 1;
+            text-align: center;
+            padding: 30px;
+
+                [type="submit"]:hover {
+                    background-color: #ce8abc;
+                    }
+                }
+
+              
+        .form__input {
+            width: 100%;
+            padding: 7px;
+            margin: 6px 0;
+            border: none;
+            border-bottom: 3px solid #b39f8d;
+    
+            }
+
+        
+        .img-container {
+            padding: 20px;
+            margin: auto;      
+            }
+
+}
+
+
+
+.form textarea {
+            min-height: 140px;
+            resize: none;
+}
+
+
+.compras-h2 {
+    text-align: center;
+    margin: 50px;
+    font-size: 3rem;
+}
+
+.section__compras {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+            .compras-foto{
+                width: 100%;
+                margin: 80px;
+                }
+}
+
+
+.compras-titulo {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.compras-agregar {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+
+    
+            .btn-vc {
+                background-color: #b39f8d;
+                padding: 15px;
+                margin: 15px;
+                text-decoration: none;
+                border-radius: 5%;
+
+                @media screen and (max-width: $res_mobile){
+                   padding: 7px;
+                   font-size: 10px;
+                   text-decoration: none;
+                   text-align: center;
+                   border-radius: 2px;
+            
+                }
+
+                &:hover {
+                    background-color: #ce8abc;
+                        }
+                    }
+}
+
+.section-comprar{
+    margin: 80px;
+    }
+
+
+
+footer{
+       /* background-color: #efa8dc;*/
+     background-image: $gradiente;
+
+    }
+
+
+.contenedor__footer {
+        display: flex;
+        justify-content: center;
+
+                .titulo-footer {
+                    margin: 30px;
+                    font-size: 40px;    
+                     }
+    }
+
+
+    
+.div-contacto {
+    display: flex;
+    justify-content: center;
+
+            .footer-contacto {
+                font-size: 17px;
+                padding: 7px;
+
+                            &:hover {
+                                background-color: #ce8abc;
+                                color: #905080;
+                                border: 2px solid #ce8abc;
+                                    }
+                             }
+}
+
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+
+            @media screen and (max-width: $res_mobile){
+                flex-direction: column;
+                 }
+
+        .redes-item {
+                font-size: 20px;
+                padding: 20px;
+                border: 2px solid black;
+
+                &:hover {
+                    background-color:#ce8abc;
+                    color: #905080;
+                    border: 2px solid #ce8abc;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                &:active{
+                    background-color: palevioletred;
+                }
+
+                
+                        @media screen and (max-width: $res_tablet){
+                            font-size: 10px;
+                            padding: 5px;
+                                }
+
+                        @media screen and (max-width: $res_mobile){
+                            font-size: 15px;
+                            padding: 10px;
+                            color: #905080;
+                            border: 1px solid #b39f8d ;
+                                }
+                    }
+
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+
+    
+            .p-copyright {
+                 margin: 20px;
+                }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
