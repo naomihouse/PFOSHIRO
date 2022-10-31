@@ -11,13 +11,6 @@ a {
 nav {
   background-image: radial-gradient(circle 410px at 49.5% 99%, #fad0c4 0%, #ffd1ff 99.5%); }
 
-.form-buscar {
-  height: 50px;
-  border: 3px solid #b39f8d; }
-  .form-buscar .form-div {
-    display: flex;
-    align-items: center; }
-
 .header__logo {
   display: flex;
   justify-content: center; }
@@ -38,6 +31,8 @@ nav {
     padding: 10px;
     margin-bottom: 50px; }
     .header__list .header__item:hover {
+      /*background-color: #ce8abc;
+                    border: 2px solid rgb(222, 136, 187);*/
       background-color: #ce8abc;
       border: 2px solid #de88bb; }
     .header__list .header__item:active {
@@ -247,7 +242,7 @@ nav {
 .compras-h2 {
   text-align: center;
   margin: 50px;
-  font-size: 3rem; }
+  font-size: 15px; }
 
 .section__compras {
   display: flex;
