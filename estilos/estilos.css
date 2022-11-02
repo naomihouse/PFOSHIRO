@@ -302,6 +302,17 @@ nav {
     width: 100%;
     margin: 80px; }
 
+.carrito {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: radial-gradient(circle 410px at 49.5% 99%, #fad0c4 0%, #ffd1ff 99.5%);
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 50px; }
+  .carrito span {
+    font-size: 20px; }
+
 footer {
   /* background-color: #efa8dc;*/
   background-image: radial-gradient(circle 410px at 49.5% 99%, #fad0c4 0%, #ffd1ff 99.5%); }
@@ -359,14 +370,3 @@ footer {
   justify-content: center; }
   .copyright .p-copyright {
     margin: 20px; }
-
-.carrito {
-  display: flex;
-  flex-wrap: wrap;
-  background-image: radial-gradient(circle 410px at 49.5% 99%, #fad0c4 0%, #ffd1ff 99.5%);
-  justify-content: center;
-  padding: 30px;
-  text-align: center;
-  margin-bottom: 50px; }
-  .carrito span {
-    font-size: 20px; }

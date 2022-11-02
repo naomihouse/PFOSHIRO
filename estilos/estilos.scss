@@ -455,6 +455,21 @@ nav {
                 }
 }
 
+.carrito{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: $gradiente;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    span{
+        font-size: 20px;
+    }
+}
+
+
 
 
 
@@ -550,19 +565,6 @@ footer{
 
 
 
-.carrito{
-    display: flex;
-    flex-wrap: wrap;
-    background-image: $gradiente;
-    justify-content: center;
-    padding: 30px;
-    text-align: center;
-    margin-bottom: 50px;
-
-    span{
-        font-size: 20px;
-    }
-}
 
 
 
