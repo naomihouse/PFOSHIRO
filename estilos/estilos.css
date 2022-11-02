@@ -154,6 +154,24 @@ nav {
       .d-flex .input-group {
         padding: 10px; } }
 
+.video {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 30px;
+  flex-wrap: wrap; }
+  .video p {
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px;
+    color: #ce8abc; }
+    @media screen and (max-width: 420px) {
+      .video p {
+        font-size: 20px;
+        color: #ce8abc; } }
+  .video iframe {
+    width: 100%; }
+
 .servicios {
   text-align: center; }
 
@@ -253,7 +271,8 @@ nav {
     min-width: 400px;
     flex: 1;
     text-align: center;
-    padding: 30px; }
+    padding: 30px;
+    margin: 10px; }
     .flex__container .form [type="submit"]:hover {
       background-color: #ce8abc; }
   .flex__container .form__input {
@@ -273,7 +292,7 @@ nav {
 .compras-h2 {
   text-align: center;
   margin: 50px;
-  font-size: 15px; }
+  font-size: 30px; }
 
 .section__compras {
   display: flex;
@@ -282,33 +301,6 @@ nav {
   .section__compras .compras-foto {
     width: 100%;
     margin: 80px; }
-
-.compras-titulo {
-  text-align: center;
-  font-size: 2rem; }
-
-.compras-agregar {
-  display: flex;
-  justify-content: space-around;
-  margin: 40px; }
-  .compras-agregar .btn-vc {
-    background-color: #b39f8d;
-    padding: 15px;
-    margin: 15px;
-    text-decoration: none;
-    border-radius: 5%; }
-    @media screen and (max-width: 420px) {
-      .compras-agregar .btn-vc {
-        padding: 7px;
-        font-size: 10px;
-        text-decoration: none;
-        text-align: center;
-        border-radius: 2px; } }
-    .compras-agregar .btn-vc:hover {
-      background-color: #ce8abc; }
-
-.section-comprar {
-  margin: 80px; }
 
 footer {
   /* background-color: #efa8dc;*/
@@ -368,20 +360,13 @@ footer {
   .copyright .p-copyright {
     margin: 20px; }
 
-.video {
+.carrito {
   display: flex;
+  flex-wrap: wrap;
+  background-image: radial-gradient(circle 410px at 49.5% 99%, #fad0c4 0%, #ffd1ff 99.5%);
   justify-content: center;
-  margin: 30px;
   padding: 30px;
-  flex-wrap: wrap; }
-  .video p {
-    font-size: 30px;
-    margin: 20px;
-    padding: 10px;
-    color: #ce8abc; }
-    @media screen and (max-width: 420px) {
-      .video p {
-        font-size: 20px;
-        color: #ce8abc; } }
-  .video iframe {
-    width: 100%; }
+  text-align: center;
+  margin-bottom: 50px; }
+  .carrito span {
+    font-size: 20px; }
