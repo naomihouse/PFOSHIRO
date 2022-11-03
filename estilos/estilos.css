@@ -11,6 +11,7 @@ a {
 nav {
   background-image: radial-gradient(circle 410px at 49.5% 99%, #fad0c4 0%, #ffd1ff 99.5%); }
 
+/*header*/
 .header__logo {
   display: flex;
   justify-content: center; }
@@ -49,6 +50,7 @@ nav {
         padding: 5px;
         margin: 7px; } }
 
+/*portada bievenidos al mundo en el index*/
 .section__index {
   display: flex;
   justify-content: center;
@@ -76,6 +78,7 @@ nav {
     .section__index .btn:hover {
       background-color: #905080; }
 
+/*seccion vinos destacados en el index*/
 .main__subtitulo {
   text-align: center;
   margin: 50px;
@@ -105,6 +108,7 @@ nav {
     background-color: #905080;
     color: black; }
 
+/*seccion conoce nuestra vinoteca en el index*/
 .vinoteca {
   background-image: url(../img/estrellas.jpg);
   display: flex;
@@ -125,6 +129,7 @@ nav {
       .vinoteca .vinoteca-p {
         font-size: 15px; } }
 
+/*suscripcion*/
 .d-flex {
   display: flex;
   flex-wrap: wrap;
@@ -154,6 +159,7 @@ nav {
       .d-flex .input-group {
         padding: 10px; } }
 
+/*video en vinos */
 .video {
   display: flex;
   justify-content: center;
@@ -172,6 +178,7 @@ nav {
   .video iframe {
     width: 100%; }
 
+/*seccion nosotros*/
 .servicios {
   text-align: center; }
 
@@ -200,6 +207,7 @@ nav {
   .card-group .card {
     margin: 20px; }
 
+/*seccion vinos*/
 .vinos__titulo {
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -208,6 +216,7 @@ nav {
   padding: 20px;
   border: 3px solid #b39f8d; }
 
+/*grid de vinos y espumantes*/
 .grid__container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -220,6 +229,7 @@ nav {
 .promo {
   margin-bottom: 30px; }
 
+/*seccion espumantes*/
 .espumantes__titulo {
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -228,6 +238,7 @@ nav {
   padding: 20px;
   border: 3px solid #b39f8d; }
 
+/*seccion contacto */
 .map {
   display: flex;
   justify-content: center;
@@ -289,6 +300,7 @@ nav {
   min-height: 140px;
   resize: none; }
 
+/*seccion compras */
 .compras-h2 {
   text-align: center;
   margin: 50px;
@@ -313,6 +325,7 @@ nav {
   .carrito span {
     font-size: 20px; }
 
+/*footer*/
 footer {
   /* background-color: #efa8dc;*/
   background-image: radial-gradient(circle 410px at 49.5% 99%, #fad0c4 0%, #ffd1ff 99.5%); }

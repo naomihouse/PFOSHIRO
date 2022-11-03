@@ -28,6 +28,7 @@ nav {
 }
 
 
+                 /*header*/ 
 
 
 .header__logo {
@@ -90,6 +91,7 @@ nav {
 }
 
 
+/*portada bievenidos al mundo en el index*/                   
 
 .section__index {
     display: flex;
@@ -132,6 +134,10 @@ nav {
 }
 
 
+    
+
+       /*seccion vinos destacados en el index*/
+
 .main__subtitulo {
     text-align: center;
     margin: 50px;
@@ -173,6 +179,7 @@ nav {
 }
 
 
+             /*seccion conoce nuestra vinoteca en el index*/
 
 .vinoteca{
     background-image: url(../img/estrellas.jpg);
@@ -198,6 +205,8 @@ nav {
 
          }
 }
+
+                        /*suscripcion*/
 
 .d-flex{
     display: flex;
@@ -244,6 +253,8 @@ nav {
                  }
     }
 
+
+                   /*video en vinos */
     .video{
         display: flex;
         justify-content: center;
@@ -269,7 +280,7 @@ nav {
     }
     
     
-
+          /*seccion nosotros*/
 .servicios{
     text-align: center;
 }
@@ -316,7 +327,7 @@ nav {
     }
 }
 
-
+                            /*seccion vinos*/
 
 .vinos__titulo {
     font-size: 20px;
@@ -327,6 +338,8 @@ nav {
     border: 3px solid #b39f8d;
 
 }
+
+                               /*grid de vinos y espumantes*/
 
 .grid__container {
     display: grid;
@@ -342,7 +355,7 @@ nav {
     margin-bottom: 30px;
 }
 
-
+                           /*seccion espumantes*/
 
 .espumantes__titulo {
     font-size: 20px;
@@ -353,7 +366,8 @@ nav {
     border: 3px solid #b39f8d;
 
 }
-
+ 
+                     /*seccion contacto */
 
 .map {
     display: flex;
@@ -438,6 +452,9 @@ nav {
 }
 
 
+
+                 /*seccion compras */
+
 .compras-h2 {
     text-align: center;
     margin: 50px;
@@ -471,7 +488,7 @@ nav {
 
 
 
-
+                   /*footer*/
 
 
 footer{
