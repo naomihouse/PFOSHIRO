@@ -16,7 +16,7 @@ nav {
   display: flex;
   justify-content: center; }
   .header__logo .logo__foto {
-    max-width: 200px;
+    max-width: 170px;
     margin: 30px; }
 
 .header__list {
@@ -27,10 +27,10 @@ nav {
     .header__list {
       flex-direction: column; } }
   .header__list .header__item {
-    font-size: 18px;
-    border: 2px solid #b39f8d;
+    font-size: 15px;
+    border: 2px solid #ce8abc;
     padding: 10px;
-    margin-bottom: 50px; }
+    margin-bottom: 10px; }
     .header__list .header__item:hover {
       /*background-color: #ce8abc;
                     border: 2px solid rgb(222, 136, 187);*/
@@ -110,7 +110,8 @@ nav {
 
 /*seccion conoce nuestra vinoteca en el index*/
 .vinoteca {
-  background-image: url(../img/estrellas.jpg);
+  /*background-image: url(../img/estrellas.jpg);*/
+  background-image: url(../img/tres.jpg);
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -120,11 +121,14 @@ nav {
   background-size: cover;
   width: 100%;
   margin-bottom: 30px;
-  align-items: center; }
+  align-items: flex-end; }
   .vinoteca .vinoteca-p {
-    color: white;
+    color: black;
     padding: 5%;
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: bold;
+    /*font-family: "Astoria";*/
+    font-family: 'Cinzel', serif; }
     @media screen and (max-width: 420px) {
       .vinoteca .vinoteca-p {
         font-size: 15px; } }
@@ -210,7 +214,8 @@ nav {
 /*seccion vinos*/
 .vinos__titulo {
   font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+  font-family: 'Cinzel', serif;
   text-align: center;
   margin: 50px 50px;
   padding: 20px;
@@ -325,6 +330,23 @@ nav {
   .carrito span {
     font-size: 20px; }
 
+/*seccion novedades*/
+.nov-ver {
+  border: 1px solid #ce8abc;
+  text-align: center;
+  margin: 30px;
+  padding: 10px; }
+  .nov-ver .card-title {
+    font-size: 25px;
+    font-family: 'Cinzel', serif; }
+  .nov-ver img {
+    max-width: 120px; }
+
+.nov-articulo {
+  text-align: center;
+  padding: 10px;
+  margin: 30px; }
+
 /*footer*/
 footer {
   /* background-color: #efa8dc;*/
@@ -383,3 +405,6 @@ footer {
   justify-content: center; }
   .copyright .p-copyright {
     margin: 20px; }
+
+.nav-item {
+  color: black; }

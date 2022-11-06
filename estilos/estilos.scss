@@ -25,6 +25,7 @@ a {
 nav {
     background-image: $gradiente
     
+    
 }
 
 
@@ -36,7 +37,7 @@ nav {
     justify-content: center;
 
             .logo__foto {
-                max-width: 200px;
+                max-width: 170px;
                 margin: 30px;
     
     }
@@ -54,10 +55,12 @@ nav {
     }
 
             .header__item {
-                font-size: 18px;
-                border: 2px solid #b39f8d;
+                font-size: 15px;
+                border: 2px solid $colorhover;
                 padding: 10px;
-                margin-bottom: 50px;
+                margin-bottom: 10px;
+            
+            
                 
 
                 &:hover {
@@ -182,7 +185,8 @@ nav {
              /*seccion conoce nuestra vinoteca en el index*/
 
 .vinoteca{
-    background-image: url(../img/estrellas.jpg);
+    /*background-image: url(../img/estrellas.jpg);*/
+    background-image:url(../img/tres.jpg);
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -192,12 +196,17 @@ nav {
     background-size: cover;
     width: 100%;
     margin-bottom: 30px;
-    align-items: center;
+    align-items:flex-end;
 
     .vinoteca-p{
-        color: white;
+        color: black;
         padding: 5%;
         font-size: 20px;
+        font-weight: bold;
+        /*font-family: "Astoria";*/
+        font-family: 'Cinzel', serif;
+        
+
 
         @media screen and (max-width: $res_mobile){
             font-size: 15px;
@@ -211,7 +220,7 @@ nav {
 .d-flex{
     display: flex;
     flex-wrap: wrap;
-    background-image: radial-gradient( circle 588px at 31.7% 40.2%,  rgba(225,200,239,1) 21.4%, rgba(163,225,233,1) 57.1% );
+    background-image: $gradientesecundario;
    /* background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
     
     background-color: rgb(235, 167, 162);*/
@@ -331,7 +340,8 @@ nav {
 
 .vinos__titulo {
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    font-family: 'Cinzel', serif;
     text-align: center;
     margin: 50px 50px;
     padding: 20px;
@@ -487,6 +497,31 @@ nav {
 }
 
 
+                /*seccion novedades*/
+.nov-ver{
+    border: 1px solid $colorhover;
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+
+    .card-title{
+        font-size: 25px;
+        font-family:'Cinzel', serif; 
+    }
+
+    img{
+        max-width: 120px;
+    }
+
+   
+}
+
+.nov-articulo{
+    text-align: center;
+    padding: 10px;
+    margin:30px;
+}
+
 
                    /*footer*/
 
@@ -580,11 +615,9 @@ footer{
 }
 
 
-
-
-
-
-
+.nav-item{
+    color: black;
+}
 
 
 
