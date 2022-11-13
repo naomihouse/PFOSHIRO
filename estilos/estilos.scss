@@ -86,7 +86,8 @@ nav {
                     font-size: 10px; 
                     padding: 5px;
                     margin: 7px;
-            
+                    text-align: center;
+ 
                 }
 
                 @media screen and (max-width:$res_tablet){
@@ -604,6 +605,7 @@ footer{
                             padding: 10px;
                             color: #905080;
                             border: 1px solid #b39f8d ;
+                            text-align: center;
                                 }
                     }
 
