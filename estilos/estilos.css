@@ -26,7 +26,7 @@ nav {
 
 .header__list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   list-style-type: none; }
   @media screen and (max-width: 420px) {
@@ -67,10 +67,11 @@ nav {
   background-image: url(../img/bienvenidas.jpg);
   height: 100vh;
   background-position: center;
-  font-size: 1 rem;
+  font-size: 20px;
   align-items: center;
   flex-wrap: wrap;
-  background-size: cover; }
+  background-size: cover;
+  flex-direction: column; }
   .section__index .section__p {
     font-size: 4rem; }
     @media screen and (max-width: 900px) {
@@ -104,7 +105,8 @@ nav {
   margin: 80px; }
   @media screen and (max-width: 420px) {
     .main__vinosdestacados {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin: 40px 20px; } }
 
 .btn-comprar {
   background-color: #efa8dc;
@@ -187,7 +189,9 @@ nav {
     @media screen and (max-width: 420px) {
       .video p {
         font-size: 20px;
-        color: #ce8abc; } }
+        color: #ce8abc;
+        margin: 15px;
+        padding: 15px; } }
   .video iframe {
     width: 100%; }
 
@@ -213,7 +217,8 @@ nav {
   @media screen and (max-width: 420px) {
     .nosotros__p {
       font-size: 10px;
-      padding: 15px; } }
+      padding: 15px;
+      margin: 25px; } }
 
 .card-group {
   margin: 20px; }
@@ -226,7 +231,7 @@ nav {
   /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
   font-family: 'Cinzel', serif;
   text-align: center;
-  margin: 50px 50px;
+  margin: 20px 30px;
   padding: 20px;
   border: 3px solid #b39f8d; }
 
@@ -248,7 +253,7 @@ nav {
   font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
-  margin: 50px 50px;
+  margin: 20px 30px;
   padding: 20px;
   border: 3px solid #b39f8d; }
 
@@ -317,7 +322,7 @@ nav {
 /*seccion compras */
 .compras-h2 {
   text-align: center;
-  margin: 50px;
+  margin: 20px;
   font-size: 30px; }
 
 .section__compras {
@@ -326,7 +331,7 @@ nav {
   margin: 20px; }
   .section__compras .compras-foto {
     width: 100%;
-    margin: 80px; }
+    margin: 20px; }
 
 .carrito {
   display: flex;
